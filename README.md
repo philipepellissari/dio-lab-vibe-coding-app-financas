@@ -140,7 +140,7 @@ Crie um layout principal dividido em duas seções interativas:
   - O que não funcionou como o esperado?  interações limitadas no lovable
   - O que aprendeu sobre conversar com IAs? A Ia é muito útil quando você sabe pedir para ela
 
-> [!TIP]
+> https://floresce-meu-bolso.lovable.app/
 > Publique seu repositório e compartilhe o link na plataforma da DIO! Sua entrega é a prova de que você domina o raciocínio de Vibe Coding, mesmo sem escrever uma única linha de código.
 
 ## 💬 Conclusão
