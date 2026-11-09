@@ -1,4 +1,4 @@
-# 💸 App de Organização de Finanças Pessoais com Vibe Coding
+# 💸 App de Organização de Finanças Pessoais do Philipe com Vibe Coding
 
 Aprenda a **criar soluções com IA** de forma criativa, guiando ferramentas como o **Copilot** e o **Lovable** com uma comunicação simples e natural. O foco é desenvolver o conceito de um **App de Organização de Finanças Pessoais**, mas, acima de tudo, aprender o **jeito Vibe de programar com IA**.
 
@@ -73,13 +73,72 @@ Durante essa etapa, você pode orientar a IA para três entregas principais:
 Finalize seu projeto criando um **repositório no GitHub** (pode ser um **fork** deste).  
 No README do seu repositório, inclua:
 
-- Seu **prompt final** (PRD);  
-- Prints ou pequenos vídeos das interações com a IA;  
-- Um resumo do que o seu **App de Finanças Pessoais** faz;  
+-Crie a primeira versão (MVP) de um aplicativo web de Finanças Pessoais Conversacionais, com foco em simplicidade e Design Universal.
+
+# 1. Visão Geral e Estética
+- Interface moderna, limpa e responsiva (mobile e desktop).
+- Estilo visual inspirado no Notion/Vercel, com suporte nativo a temas escuro e claro de alto contraste.
+- Siga rigorosamente os princípios de Design Universal: alta legibilidade de fontes, áreas de clique/toque amplas (mínimo 44x44px), navegação completa por teclado, suporte a leitores de tela (ARIA labels) e visualização de dados com rótulos textuais claros além das cores (para total acessibilidade a daltônicos).
+
+# 2. Estrutura da Página e Layout
+Crie um layout principal dividido em duas seções interativas:
+- Lado Esquerdo (ou Topo em telas menores): Dashboard Resumido e Histórico.
+- Lado Direito (ou Painel Lateral): Chat Inteligente de Transações.
+
+# 3. Componentes e Funcionalidades do MVP
+
+## A. Dashboard Resumido
+- Três cards principais no topo: Saldo Atual, Gastos do Mês (Despesas) e Total Guardado/Economias.
+- Gráfico visual simples de distribuição de gastos por categoria. Use cores contrastantes acompanhadas de ícones e rótulos explícitos com porcentagem e valor (ex: "Alimentação: R$ 450,00 - 35%").
+
+## B. Widget de Chat Conversacional
+- Interface de chat amigável com campo de entrada de texto e botão de envio claro.
+- Mensagem de boas-vindas inicial explicando o uso com exemplos visuais clicáveis (ex: "Gastei 45 reais em almoço").
+- Simulação de leitura de linguagem natural: quando o usuário enviar uma mensagem como "Gastei 30 no Uber", o chat deve responder confirmando a transação ("Registrado: R$ 30,00 em Transporte") e atualizar instantaneamente o Saldo, o Gráfico e a Tabela de Transações.
+- Tolerância ao erro: se a entrada for ambígua, o chat deve solicitar confirmação educadamente com botões de resposta rápida.
+
+## C. Lista de Transações Recentes
+- Tabela/lista interativa logo abaixo dos cards de resumo com as últimas transações.
+- Cada item deve exibir: ícone da categoria, nome da transação, categoria, valor e data.
+- Botões acessíveis para editar ou excluir transações individualmente.
+
+## D. Agente de Insights (Painel de Dicas)
+- Um card destacado contendo sugestões simples de economia geradas com base no histórico simulado (ex: "Dica: Você gastou 25% a mais em delivery esta semana em comparação com a semana passada").
+
+# 4. Dados Iniciais
+- Preencha o aplicativo com dados fictícios (mock data) de 4 a 5 transações iniciais para que a interface não fique vazia na primeira renderização.    
+- ## Funcionalidades do Aplicativo (MVP - Prosa Finanças)
+
+### 1. Assistente de Transações (Chat Conversacional)
+- **Registro em Linguagem Natural:** Permite adicionar receitas, despesas e economias digitando frases simples do dia a dia (ex: "Gastei 45 reais em almoço", "Gastei 30 no Uber", "Recebi 1.200 de freela").
+- **Sugestões Rápidas (Chips de Exemplo):** Apresenta exemplos interativos prontos para guiar o usuário de forma intuitiva.
+- **Atualização Reativa:** Ao enviar uma mensagem, o sistema extrai o valor, a categoria e a data, atualizando automaticamente o dashboard e a lista de lançamentos.
+
+### 2. Dashboard Resumido
+- **Cards de Métricas Principais:**
+  - **Saldo Atual:** Exibe o valor líquido consolidado (Receitas menos despesas e valores guardados).
+  - **Gastos do Mês:** Destaque para o total de despesas acumuladas no mês vigente.
+  - **Total Guardado:** Acompanhamento de reservas financeiras e a porcentagem correspondente da renda mensal.
+- **Gráfico de Gastos por Categoria:** Gráfico em rosca com alto contraste visual, integrando rótulos textuais explicativos e porcentagens para garantir total acessibilidade.
+
+### 3. Gestão e Histórico de Transações
+- **Lista Interativa de Transações:** Exibição clara de todos os lançamentos com ícones por categoria, descrição, valor com código de cores (verde para entradas, vermelho para saídas) e data.
+- **Ações Rápidas:** Botões acessíveis para editar ou excluir transações individualmente de maneira simples.
+
+### 4. Agente de Insights (Painel de Dicas Inteligentes)
+- **Alertas de Consumo:** Notificações automáticas sobre aumentos atípicos de gastos em categorias específicas (ex: despesas com delivery).
+- **Dicas de Economia Personalizadas:** Recomendações didáticas baseadas no maior volume de despesas para auxiliar no corte de gastos desnecessários.
+- **Acompanhamento de Metas:** Sugestões práticas para alcançar metas percentuais de economia mensal com base na renda.
+
+### 5. Design Universal e Acessibilidade
+- **Interface Limpa e Alto Contraste:** Visual moderno com tipografia de alta legibilidade e suporte a temas (claro/escuro).
+- **Navegação Flexível:** Áreas de clique e toque amplas, preparadas para navegação via teclado e suporte a leitores de tela.
+- **Comunicação Multimodal:** Informações apresentadas através de texto, ícones, números e cores de forma complementar.
+```[cite: 1, 2]
 - Uma breve **reflexão sobre o processo**:
-  - O que funcionou bem?  
-  - O que não funcionou como o esperado?  
-  - O que aprendeu sobre conversar com IAs?
+  - O que funcionou bem? O chatbot me ajudou a montar os prompts para eu colocar no lovable
+  - O que não funcionou como o esperado?  interações limitadas no lovable
+  - O que aprendeu sobre conversar com IAs? A Ia é muito útil quando você sabe pedir para ela
 
 > [!TIP]
 > Publique seu repositório e compartilhe o link na plataforma da DIO! Sua entrega é a prova de que você domina o raciocínio de Vibe Coding, mesmo sem escrever uma única linha de código.
